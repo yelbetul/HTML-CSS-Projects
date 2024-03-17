@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+.container{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url(../img/foto1.jpg);
+    background-size: cover;
+    background-position: 50% 36%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,0.85);
+}
+.content{
+    position: relative;
+    max-width: 700px;
+    padding: 2rem;
+    z-index: 1;
+}
+.content h1{
+    font-size: 5.6rem;
+    margin-bottom: 0.8rem;
+    color: #FF6600;
+    font-family: "Dancing Script",cursive;
+}
+.content p{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.btn{
+    padding: 0.75rem 1.25rem;
+    margin-top: .8rem;
+    font-size: 1.2rem;
+    font-weight: 540;
+    font-family: 'Roboto',sans-serif;
+    color:#FF6600;
+    background-color: #111;
+    border-radius: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: .3s;
+}
+.btn:hover{
+    /* box-shadow: rgb(79, 77, 77) 0px 10px 20px -10px; */
+    box-shadow: rgba(76, 76, 81, 0.25) 0px 6px 12px -2px, rgba(50, 50, 50, 0.3) 0px 3px 7px -3px;
+    transform: scale(1.025);
+    transition: transform .3s;
+}
